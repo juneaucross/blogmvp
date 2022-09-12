@@ -9,6 +9,8 @@
 				<span v-else-if="id === 2"> (this one uses rich text markdown. its works, but not styled yet)</span>
 			</li>
 		</ul>
+
+		<span>feel free to add some too!</span>
 	</section>
 </template>
 
