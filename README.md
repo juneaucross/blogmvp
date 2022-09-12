@@ -2,7 +2,7 @@
 
 ## installation
 
-at first run `yarn install` in the root directory
+at first run `yarn install` in both `strapi-backend` and `nuxt-frontend` directories
 
 ## server
 
