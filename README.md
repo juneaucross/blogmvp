@@ -8,7 +8,7 @@ at first run `yarn install` in both `strapi-backend` and `nuxt-frontend` directo
 
  then in the `strapi-backend` dirctory run `yarn develop` to start server
 
- then go to http://localhost:1337/admin and login with `admin@admin.com : Admin123`  to discover or edit the content
+ go to http://localhost:1337/admin and login with `admin@admin.com : Admin123`  to discover or edit the content
 
 ## client
 
