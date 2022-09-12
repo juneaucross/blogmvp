@@ -3,14 +3,14 @@
 		<h1>articles list</h1>
 		<ul>
 			<li v-for="{ attributes: article, id } in articles" :key="id">
-				<nuxt-link :to="`/articles/${id}`">{{ article.title }}</nuxt-link>
+				<nuxt-link :to="`/articles/${article.slug}`">{{ article.title }}</nuxt-link>
 				<!-- spans below is just for demo ofc -->
 				<span v-if="id === 1"> (this one had a pure html markup. no big deal that its broken)</span>
 				<span v-else-if="id === 2"> (this one uses rich text markdown. its works, but not styled yet)</span>
 			</li>
 		</ul>
 
-		<span>feel free to add some too!</span>
+		<span>feel free to <a href="http://localhost:1337/admin" target="_blank">add some</a> too!</span>
 	</section>
 </template>
 

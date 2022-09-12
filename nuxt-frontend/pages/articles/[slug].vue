@@ -14,7 +14,7 @@
 
 	const md = new MarkdownIt();
 
-	const article = await findOne('articles', params.id)
+	const article = await findOne('articles', params.slug)
 		.then((res) => res.data.attributes);
 
 	const content = md.render(article.body);
