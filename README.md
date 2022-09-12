@@ -6,7 +6,9 @@ at first run `yarn install` in both `strapi-backend` and `nuxt-frontend` directo
 
 ## server
 
- then in tne `strapi-backend` dirctory run `yarn develop` to start server and go to http://localhost:1337/admin to edit content
+ then in tne `strapi-backend` dirctory run `cp .env.example .env` to copy .env file and `yarn develop` to start server
+
+ then go to http://localhost:1337/admin to edit the content
 
 ## client
 
