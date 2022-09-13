@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_categories",
+  "info": {
+    "singularName": "main-category",
+    "pluralName": "main-categories",
+    "displayName": "Main Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "item_id": {
+      "type": "uid"
+    }
+  }
+}

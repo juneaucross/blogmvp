@@ -1,13 +1,15 @@
 'use strict';
 
 /**
- * article controller
+ * author controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const {
+  createCoreController
+} = require('@strapi/strapi').factories;
 
 // !!! function to add to or override default controller methods !!!PAY ATTENTION!!!
-module.exports = createCoreController("api::article.article", ({
+module.exports = createCoreController("api::author.author", ({
   strapi
 }) => ({
   async findOne(ctx) {
@@ -22,9 +24,9 @@ module.exports = createCoreController("api::article.article", ({
       ...ctx.query,
     };
 
-    const article = await strapi.entityService.findMany("api::article.article", query);
+    const author = await strapi.entityService.findMany("api::author.author", query);
 
-    const sanitizedEntity = await this.sanitizeOutput(article);
+    const sanitizedEntity = await this.sanitizeOutput(author);
 
     return this.transformResponse(sanitizedEntity[0]);
   },

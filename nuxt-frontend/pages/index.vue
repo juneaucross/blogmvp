@@ -1,5 +1,5 @@
 <template>
 	<section>
-		<nuxt-link to="/articles">articles list</nuxt-link>
+		<nuxt-link to="/posts">posts list</nuxt-link>
 	</section>
 </template>

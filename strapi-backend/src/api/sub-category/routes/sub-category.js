@@ -1,11 +1,13 @@
 'use strict';
 
 /**
- * article router
+ * sub-category router
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
-const defaultRouter = createCoreRouter('api::article.article');
+const {
+  createCoreRouter
+} = require('@strapi/strapi').factories;
+const defaultRouter = createCoreRouter('api::sub-category.sub-category');
 
 // !!! function to add to or override default router methods !!!PAY ATTENTION!!!
 const customRouter = (innerRouter, routeOveride = [], extraRoutes = []) => {
@@ -41,8 +43,8 @@ const customRouter = (innerRouter, routeOveride = [], extraRoutes = []) => {
 // Overide the default router with the custom router to use slug.
 const myOverideRoutes = [{
   method: "GET",
-  path: "/articles/:slug",
-  handler: "api::article.article.findOne",
+  path: "/sub-categories/:slug",
+  handler: "api::sub-category.sub-category.findOne",
 }];
 
 const myExtraRoutes = [];

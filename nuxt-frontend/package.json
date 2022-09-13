@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "@nuxtjs/strapi": "npm:@nuxtjs/strapi-edge@latest",
-    "markdown-it": "^13.0.1",
     "nuxt": "3.0.0-rc.9"
   }
 }
