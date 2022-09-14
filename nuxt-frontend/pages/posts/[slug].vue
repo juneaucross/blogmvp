@@ -12,7 +12,4 @@
 
 	const post = await findOne('posts', params.slug)
 		.then((res) => res.data.attributes);
-
-	const tost = await findOne('posts', params.slug)
-		.then((res) => console.log(res));
 </script>

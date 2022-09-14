@@ -22,11 +22,7 @@
       "required": true
     },
     "summary": {
-      "type": "string"
-    },
-    "first_letter": {
-      "type": "string",
-      "maxLength": 1
+      "type": "text"
     },
     "content": {
       "type": "richtext"
@@ -62,6 +58,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::author.author"
+    },
+    "featured": {
+      "type": "boolean"
     }
   }
 }
