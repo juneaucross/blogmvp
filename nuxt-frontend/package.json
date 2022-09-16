@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxtjs/strapi": "npm:@nuxtjs/strapi-edge@latest",
+    "@nuxtjs/tailwindcss": "^5.3.3",
     "nuxt": "3.0.0-rc.9"
   }
 }
